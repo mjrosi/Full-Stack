@@ -26,7 +26,7 @@
 
     <nav class="navbar navbar-expand-lg navbar-light bg-white">
         <div class="container-fluid">
-            <a class="navbar-brand" href="{% url 'home' %}"><span class="brand">SHOOD</span></a>
+            <a class="navbar-brand" href="{% url 'home' %}"><span class="brand">SHOOD Blog</span></a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText"
                 aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
@@ -42,10 +42,10 @@
                     </li>
                     {% else %}
                     <li class="nav-item">
-                        <a class="nav-link" href="{% url 'account_signup' %}">Register</a>
+                        <a class="nav-link" href="{% url 'account_signup' %}">Sign Up</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="{% url 'account_login' %}">Login</a>
+                        <a class="nav-link" href="{% url 'account_login' %}">Sign In</a>
                     </li>
                     {% endif %}
 
@@ -91,13 +91,32 @@
     </main>
 
     <!-- Footer -->
-    <footer class="footer mt-auto py-3 dark-bg">
-        <p class="m-0 text-center text-white">Made by mjrosi</p>
-        <p class="m-0 text-center text-white">Follow me: <i class="fab fa-facebook-square ms-3"></i>
-            <i class="fab fa-twitter-square ms-3"></i>
-            <i class="fab fa-instagram-square ms-3"></i>
-            <i class="fab fa-youtube-square ms-3"></i></p>
-    </footer>
+    <footer class="footer-dark text-light">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-4">
+              <h3>Links</h3>
+              <ul class="list-unstyled">
+                <li><a href="https://mjrosi.github.io/my-first-portfolio/" target="_blank">SHOOD</a></li>
+                <li><a href="https://mjrosi.github.io/second-portfolio/" target="_blank">SHOOD Quiz</a></li>
+                <li><a href="https://pp3-shopping-list.herokuapp.com/" target="_blank">SHOOD Shopping list Generator</a></li>
+              </ul>
+            </div>
+            <div class="col-md-8">
+              <h3>SHOOD Blog</h3>
+              <p>Welcome to our blog about SHOOD - the search and comparison engine for grocery shopping and delivery. Explore our blog to simplify your grocery shopping and delivery experience.</p>
+            </div>
+            <div class="col-md-12 mt-3 text-center">
+              <a href="https://facebook.com" target="_blank" rel="noopener"><i class="fab fa-facebook fa-2x mx-3 social-color"></i></a>
+              <a href="https://twitter.com" target="_blank" rel="noopener"><i class="fab fa-twitter fa-2x mx-3 social-color"></i></a>
+              <a href="https://linkedin.com" target="_blank" rel="noopener"><i class="fab fa-linkedin fa-2x mx-3 social-color"></i></a>
+              <a href="https://instagram.com" target="_blank" rel="noopener"><i class="fab fa-instagram fa-2x mx-3 social-color"></i></a>
+            </div>
+          </div>
+        </div>
+      </footer>
+      
+    
     <script>
         setTimeout(function () {
             let messages = document.getElementById('msg');
