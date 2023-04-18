@@ -34,6 +34,13 @@
   position: relative;
 }
 
+ #hero-image {
+    background-color: #3c3c68;
+    height: 400px; 
+    background-repeat: no-repeat; 
+    background-size: cover;
+ }
+
 .image-flash {
   position: absolute;
   bottom: 5%;
