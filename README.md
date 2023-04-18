@@ -63,7 +63,7 @@ The plan for this project was carried out using the Agile Methodology in Github.
 - Approve comments:
     * As a Site Admin, I can approve or disapprove comments to filter out objectionable comments.
 
-Live to the project in Github [here](hhttps://github.com/users/mjrosi/projects/1/views/1).
+Live to the project in Github [here](https://github.com/users/mjrosi/projects/1/views/1).
 
 ![User Story To DO](/media/images/user-story-to-do.png)
 ![User Story in Progress](/media/images/user-story-progress.png)
@@ -127,10 +127,116 @@ There is no JavaScript code to be validated.
 Python meets with Pep8 standards except 
 * There are some errors regarding line too long- by one character
 
-
-
 #### Python Testing
 All Custom Python code was manually tested multiple times during and after development.
+
+
+## Testing User Stories
+
+------
+User Story:
+
+> Create a User Account - As a User, I would like to be able to create an account, so that I can create and save posts
+
+Acceptance Criteria:
+* Given that I am an unregistered user, When I am on the homepage, Then I can see a button to sign up, And, When I click on the button, Then I am taken to the user registration page.
+* Given that I am an unregistered user and I am on the user registration page, When I enter my username, email address and password, And, I click on the register button, Then The system creates me an account, And, signs me in.
+* Given that I have an account and I am signed into the account, When I have an option to create a post, And, when I click on that option, Then I am taken to a page where I can provide the details of my post.
+
+Implementation of tests:
+* Check for clearly accessible call to action on homepage to register for an account and that it works as expected.
+* Clearly accessible link to login or register within main navigation bar and that it functions correctly.
+* Easy to use User registration process, user account and profile is created upon submission.
+* Clear UX design, prevent unnecessary links to register as a user, if user is already logged in.
+
+All Tests Passed.
+---
+
+-----
+
+User Story:
+
+> User Account Login / Logout - As a User, I would like to be able to login or logout of my account, so that I can keep my account secure.
+
+Acceptance Criteria:
+* Given that I am a registered user, who is not logged in when I navigate to the sign in page and I enter my credentials correctly and press sign in then I am signed into my account.
+* Given that I am a registered user, who is currently logged in when I click on the sign out link then I am signed out of my account.
+* Given that I am a registered user, who has signed out of my account when I use the browser navigation buttons such as back button then I can not access information which requires me to be signed in.
+
+Implementation of tests:
+* Provide login and logout functionality.
+* Secure restricted pages from access when a user is not signed in.
+
+All Tests Passed.
+---
+
+-----
+
+User Story:
+
+> Features restricted to Admin - As a Site admin, I would like to: 
+* create, read, update, and delete posts to manage my blog content.
+* approve or disapprove comments to filter out objectionable comments.
+
+Implementation of tests:
+* Site admin can create, read, update, and delete posts to manage my blog content in admin site.
+* Site admin can approve or disapprove comments to filter out objectionable comments in admin site.
+
+All Tests Passed.
+---
+
+-----
+
+User Story:
+
+> Create a post
+ - As a User, I would like to be able to create a post to be able keep a log for future review.
+
+Acceptance Criteria:
+* Given that I am a logged in user when I navigate to the 'Add Expense Post' of the home page so I have the option to create a post.
+* Given that I have created a post as a logged in user when I save the completed post then it is available to other users to view.
+
+Implementation of tests:
+* Provide authenticated users with a clear option to create a post.
+* Make saved posts available to other users to view.
+
+All Tests Passed &#x2611;
+---
+
+-----
+
+User Story:
+
+> View posts - As a Site User, I can view a list of posts to select one to read.
+
+Acceptance Criteria:
+* Given that I am a user on the site when I navigate to the home page then I am presented with a list of the posts i have previously created.
+* Given that I am a user on the site when I navigate to the home page And When I click on a post then I am presented with the full post details.
+
+Implementation of tests:
+* Provide users of the site with the ability to access all userd posts.
+* Provide users of the site with the ability to access the full post details from the post summary card.
+
+All Tests Passed.
+---
+
+
+-----
+
+User Story:
+
+> View likes:
+* As a Site User / Admin, I can view the number of likes on each post to see which is the most popular or viral.
+
+Acceptance Criteria:
+* Given that I am a user I can see the number of like for each post.
+
+Implementation of tests:
+* Provide UI for seeing the number of likes
+
+All Tests Passed.
+---
+
 
 
 ## Technologies
