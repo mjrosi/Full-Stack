@@ -1,108 +1,222 @@
-![CI logo](https://codeinstitute.s3.amazonaws.com/fullstack/ci_logo_small.png)
+# SHOOD Blog
 
-Welcome mjrosi,
+Live site available [here](https://blog-pp4.herokuapp.com/). 
 
-This is the Code Institute student template for Gitpod. We have preinstalled all of the tools you need to get started. It's perfectly ok to use this template as the basis for your project submissions.
 
-You can safely delete this README.md file, or change it for your own project. Please do read it at least once, though! It contains some important information about Gitpod and the extensions we use. Some of this information has been updated since the video content was created. The last update to this file was: **September 1, 2021**
+## Table of Contents
+--------------------------------------
 
-## Gitpod Reminders
+- [Description](#description)
+- [UX](#ux)
+- [Agile Development](#agile-development)
+- [Features](#features)
+- [Testing](#testing)
+- [Technologies](#technologies)
+- [Deployment](#deployment)
+- [Credits](#credits)
 
-To run a frontend (HTML, CSS, Javascript only) application in Gitpod, in the terminal, type:
+## Description
+---------------------------------------
 
-`python3 -m http.server`
+SHOOD Blog, the fourth project for the Code Institute Diploma in Software Development, is a website created using Django with Python, CSS/Bootstrap, and HTML. The site offers role-based permissions for users to access a central database, and it includes user authentication and full CRUD functionality for posts.
 
-A blue button should appear to click: _Make Public_,
 
-Another blue button should appear to click: _Open Browser_.
+## UX
+*  The blog about SHOOD - the search and comparison engine for grocery shopping and delivery. The blog is dedicated to providing users with all the information they need to know about SHOOD, including how it works, its features and benefits, and how it can help simplify grocery shopping and delivery experience.
 
-To run a backend Python file, type `python3 app.py`, if your Python file is named `app.py` of course.
+### The Sites Ideal User
 
-A blue button should appear to click: _Make Public_,
+* The ideal usage of the SHOOD blog is for individuals who are interested in simplifying their grocery shopping and delivery experience. The blog provides valuable information on how to use SHOOD's search and comparison engine to find the best deals and place simultaneous orders from different stores.
 
-Another blue button should appear to click: _Open Browser_.
+### Site Goals
 
-In Gitpod you have superuser security privileges by default. Therefore you do not need to use the `sudo` (superuser do) command in the bash terminal in any of the lessons.
+* Educate readers about SHOOD's search and comparison engine for grocery shopping and delivery.
+* Provide helpful tips and tricks for optimizing the grocery shopping experience with SHOOD.
+* Share news and updates about SHOOD, including new features and partnerships with grocery stores.
 
-To log into the Heroku toolbelt CLI:
 
-1. Log in to your Heroku account and go to *Account Settings* in the menu under your avatar.
-2. Scroll down to the *API Key* and click *Reveal*
-3. Copy the key
-4. In Gitpod, from the terminal, run `heroku_config`
-5. Paste in your API key when asked
 
-You can now use the `heroku` CLI program - try running `heroku apps` to confirm it works. This API key is unique and private to you so do not share it. If you accidentally make it public then you can create a new one with _Regenerate API Key_.
+## Agile Development
 
-------
+The plan for this project was carried out using the Agile Methodology in Github. User Stories were created using issues on git hub. Each user story explicitly explains the purpose of the issues. Each user story is segmented into acceptance criteria and tasks.
 
-## Release History
 
-We continually tweak and adjust this template to help give you the best experience. Here is the version history:
+### User Stories
+- View post list:
+    * As a Site User, I can view a list of posts to select one to read.
+- Open a post:
+    * As a Site User, I can click on a post to read the full text.
+- View likes:
+    * As a Site User / Admin, I can view the number of likes on each post to see which is the most popular or viral.
+- View comments:
+    * As a Site User / Admin, I can view comments on an  individual post to read the conversation.
+- Account registration:
+    * As a Site User, I can register an account to comment and like.
+- Comment on a post:
+    * As a Site User, I can leave comments on a post to be involved in the conversation.
+- Like / Unlike:
+    * As a Site User, I can like or unlike a post to interact with the content.
+- Manage posts:
+    * As a Site Admin, I can create, read, update, and delete posts to manage my blog content.
+- Create drafts:
+    * As a Site Admin, I can create draft posts to finish writing the content later.
+- Approve comments:
+    * As a Site Admin, I can approve or disapprove comments to filter out objectionable comments.
 
-**September 1 2021:** Remove `PGHOSTADDR` environment variable.
 
-**July 19 2021:** Remove `font_fix` script now that the terminal font issue is fixed.
+## Features
 
-**July 2 2021:** Remove extensions that are not available in Open VSX.
+**Features planned:**
+* User account - Create, Read, Update and Delete posts.
+* Blog posts - Users can comment and like posts
+* Users can login to their account.
+* Users can logout of their account.
+* Users need to be registered and logged in order to comment or like any posts.
+* Responsive Design - The site needs to be fully responsive to cover the wide variety of devices and browsers users may use to access the site.
 
-**June 30 2021:** Combined the P4 and P5 templates into one file, added the uptime script. See the FAQ at the end of this file.
+![Am I Responsive](/static/css/readme-images/am-i-responsive.png)
 
-**June 10 2021:** Added: `font_fix` script and alias to fix the Terminal font issue
+#### Home page
+The Front page asks a the visitor of the site to log into view their posts. If already logged in then it displays posts created by the user.
 
-**May 10 2021:** Added `heroku_config` script to allow Heroku API key to be stored as an environment variable.
+![Home Page](/static/css/readme-images/home-page.png)
 
-**April 7 2021:** Upgraded the template for VS Code instead of Theia.
+#### Navigation Bar
+The main navigation bar appears at the top of the page, clearly displaying the main navigational links users would require.
 
-**October 21 2020:** Versions of the HTMLHint, Prettier, Bootstrap4 CDN and Auto Close extensions updated. The Python extension needs to stay the same version for now.
+![Nav Bar](/static/css/readme-images/navbar.png)
 
-**October 08 2020:** Additional large Gitpod files (`core.mongo*` and `core.python*`) are now hidden in the Explorer, and have been added to the `.gitignore` by default.
+#### Footer
+A common footer is utilised throughout the site with the links to other SHOOD websites which are my other portfolio projects, about SHOOD Blog and link to social medias.
 
-**September 22 2020:** Gitpod occasionally creates large `core.Microsoft` files. These are now hidden in the Explorer. A `.gitignore` file has been created to make sure these files will not be committed, along with other common files.
+![footer](/static/css/readme-images/footer.png)
 
-**April 16 2020:** The template now automatically installs MySQL instead of relying on the Gitpod MySQL image. The message about a Python linter not being installed has been dealt with, and the set-up files are now hidden in the Gitpod file explorer.
+##### View post detail
+![Example Post Card](/static/css/readme-images/post-sample.png)
 
-**April 13 2020:** Added the _Prettier_ code beautifier extension instead of the code formatter built-in to Gitpod.
+#### Sign up
+Users can sign up in order to like or comment any posts.
 
-**February 2020:** The initialisation files now _do not_ auto-delete. They will remain in your project. You can safely ignore them. They just make sure that your workspace is configured correctly each time you open it. It will also prevent the Gitpod configuration popup from appearing.
+#### Sign in
+Users can sign in to their accounts.
 
-**December 2019:** Added Eventyret's Bootstrap 4 extension. Type `!bscdn` in a HTML file to add the Bootstrap boilerplate. Check out the <a href="https://github.com/Eventyret/vscode-bcdn" target="_blank">README.md file at the official repo</a> for more options.
+![Easy Access to view posts](/static/css/readme-images/home-page.png)
 
-------
+#### 
 
-## FAQ about the uptime script
+## Testing
 
-**Why have you added this script?**
+### Testing Strategy
+I utilised a manual testing strategy for the development of the site.
 
-It will help us to calculate how many running workspaces there are at any one time, which greatly helps us with cost and capacity planning. It will help us decide on the future direction of our cloud-based IDE strategy.
+#### Testing Overview
 
-**How will this affect me?**
+Testing was divided into different sections to ensure everything was tested individually with test cases developed for each area.
 
-For everyday usage of Gitpod, it doesn’t have any effect at all. The script only captures the following data:
 
-- An ID that is randomly generated each time the workspace is started.
-- The current date and time
-- The workspace status of “started” or “running”, which is sent every 5 minutes.
+#### Validator Testing
+All code files were validated using suitable validators for the specific language.
+HTML & CSS code passed the validation.
+There is no JavaScript code to be validated.
+Python meets with Pep8 standards except 
+* Settings.py - Line 153 - line too long- by one character and to break up the line would make readbality worse.
+* Models.py - Lines 28 and 29- line too long- as you can see i tried to break it up as much as possible without effecting the readability.
 
-It is not possible for us or anyone else to trace the random ID back to an individual, and no personal data is being captured. It will not slow down the workspace or affect your work.
 
-**So….?**
+#### Lighthouse Testing
+Below you can see the results of Googles Lighthouse Testing.
 
-We want to tell you this so that we are being completely transparent about the data we collect and what we do with it.
+![Lighthouse Testing](/static/css/readme-images/lighthouse-score-index.png)
 
-**Can I opt out?**
 
-Yes, you can. Since no personally identifiable information is being captured, we'd appreciate it if you let the script run; however if you are unhappy with the idea, simply run the following commands from the terminal window after creating the workspace, and this will remove the uptime script:
+#### Python Testing
+All Custom Python code was manually tested multiple times during and after development.
 
-```
-pkill uptime.sh
-rm .vscode/uptime.sh
-```
 
-**Anything more?**
+## Technologies
 
-Yes! We'd strongly encourage you to look at the source code of the `uptime.sh` file so that you know what it's doing. As future software developers, it will be great practice to see how these shell scripts work.
+* Python
+* Django
+    * Django was used as the main python framework in the development of this project.
+* Heroku
+    * Was used as the cloud based platform to deploy the site on.
+* Heroku PostgreSQL
+    * Heroku PostgreSQL was used as the database for this project during development and in production.
+* Bootstrap 5
+    * Bootstrap was used for general layout and spacing requirements for the site.
+* Font Awesome
+    * Was used for access to the Navvar bars icon for the navigation bar menu.
+* CSS
+    * CSS was written for a large number of areas on the site to implement custom styling and escape a bootstrap look and feel to the site.
+* HTML
+    * HTML was used as the base language for the templates created for the site.
 
----
+#### Packages Used
 
-Happy coding!
+* Gitpod was used to develop the site
+* Git was utilised for version control and transferring files between the code editor and the repository
+* GitHub was utilised for storing the files for this project
+
+#### Resources Used
+
+* The Django and Bootstrap documentation was used extensively during development of this project
+* The Code Institute reference material was used as a general reference for things that I had previously done during the course.
+* Other Resourses we used to help debug and to learn new features not yet covered in the course - Youtube, StackOverflow, GeekForGeeks and Slack.
+
+
+[Back to the Top](#table-of-contents)
+
+----
+
+## Deployment
+
+The site was deployed via Heroku, and the live link can be found here - [Expensed](https://dashboard.heroku.com/apps/expensed)
+
+### Project Deployment
+
+To deploy the project through Heroku I followed these steps:
+* Sign up / Log in to [Heroku](https://www.heroku.com/)
+* From the main Heroku Dashboard page select 'New' and then 'Create New App'
+* Give the project a name - I entered The-Pantry and select a suitable region, then select create app. The name for the app must be unique.
+* This will create the app within Heroku and bring you to the deploy tab. From the submenu at the top, navigate to the resources tab.
+* Add the database to the app, in the add-ons section search for 'Heroku Postgres', select the package that appears and add 'Heroku Postgres' as the database
+* Navigate to the setting tab, within the config vars section copy the DATABASE_URL to the clipboard for use in the Django configuration.
+* Within the django app repository create a new file called env.py - within this file import the os library and set the environment variable for the DATABASE_URL pasting in the address copied from Heroku. The line should appear as os.environ["DATABASE_URL"]= "Paste the link in here"
+* Add a secret key to the app using os.environ["SECRET_KEY"] = "your secret key goes here"
+* Add the secret key just created to the Heroku Config Vars as SECRET_KEY for the KEY value and the secret key value you created as the VALUE
+* In the settings.py file within the django app, import Path from pathlib, import os and import dj_database_url
+* insert the line if os.path.isfile("env.py"): import env
+* remove the insecure secret key that django has in the settings file by default and replace it with SECRET_KEY = os.environ.get('SECRET_KEY')
+* replace the databases section with DATABASES = { 'default': dj_database_url.parse(os.environ.get("DATABASE_URL"))} ensure the correct indentation for python is used.
+* In the terminal migrate the models over to the new database connection
+* Navigate in a browser to cloudinary, log in, or create an account and log in. 
+* From the dashboard - copy the CLOUDINARY_URL to the clipboard
+* in the env.py file created earlier - add os.environ["CLOUDINARY_URL"] = "paste in the Url copied to the clipboard here"
+* In Heroku, add the CLOUDINARY_URL and value copied to the clipboard to the config vars
+* Also add the KEY - DISABLE_COLLECTSTATIC with the Value - 1 to the config vars
+* this key value pair must be removed prior to final deployment
+* Add the cloudinary libraries to the list of installed apps, the order they are inserted is important, 'cloudinary_storage' goes above 'django.contrib.staitcfiles' and 'cloudinary' goes below it.
+* in the Settings.py file - add the STATIC files settings - the url, storage path, directory path, root path, media url and default file storage path.
+* Link the file to the templates directory in Heroku TEMPLATES_DIR = os.path.join(BASE_DIR, 'templates')
+* Change the templates directory to TEMPLATES_DIR - 'DIRS': [TEMPLATES_DIR]
+* Add Heroku to the ALLOWED_HOSTS list the format will be the app name given in Heroku when creating the app followed by .herokuapp.com
+* In your code editor, create three new top level folders, media, static, templates
+* Create a new file on the top level directory - Procfile
+* Within the Procfile add the code - web: guincorn PROJECT_NAME.wsgi
+* In the terminal, add the changed files, commit and push to GitHub
+* In Heroku, navigate to the deployment tab and deploy the branch manually - watch the build logs for any errors.
+* Heroku will now build the app for you. Once it has completed the build process you will see a 'Your App Was Successfully Deployed' message and a link to the app to visit the live site.
+
+
+[Back to the Top](#table-of-contents)
+
+-----
+
+## Credits
+
+All Images used across the site were sourced from either freepik.com, freely available images.
+The Navbar bars Icon was taken from font awesome.
+
+I relied heavily on the Code institute course work, particularly the I Think Therefore I Blog walk through projects.
+
+[Back to the Top](#table-of-contents)
