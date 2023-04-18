@@ -10,9 +10,9 @@
                 <div class="card-body">
                     <div class="image-container">
                         {% if "placeholder" in post.featured_image.url %}
-                        <img class="card-img-top" src="https://nmgprod.s3.amazonaws.com/media/files/3e/27/3e2715872c88078c7f7ed8d06a59df7e/cover_image.jpg.760x400_q85_crop_upscale.jpg">
+                        <img class="card-img-top" src="https://nmgprod.s3.amazonaws.com/media/files/3e/27/3e2715872c88078c7f7ed8d06a59df7e/cover_image.jpg.760x400_q85_crop_upscale.jpg" alt="Grocery">
                         {% else %}
-                        <img class="card-img-top" src="{{ post.featured_image.url }}">
+                        <img class="card-img-top" alt="Grocery" src="{{ post.featured_image.url }}">
                         {% endif %}
                     </div>
                     <a href="{% url 'post_detail' post.slug  %}" class="post-link">

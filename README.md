@@ -74,33 +74,33 @@ The plan for this project was carried out using the Agile Methodology in Github.
 * Users need to be registered and logged in order to comment or like any posts.
 * Responsive Design - The site needs to be fully responsive to cover the wide variety of devices and browsers users may use to access the site.
 
-![Am I Responsive](/static/css/readme-images/am-i-responsive.png)
 
 #### Home page
 The Front page asks a the visitor of the site to log into view their posts. If already logged in then it displays posts created by the user.
 
-![Home Page](/static/css/readme-images/home-page.png)
+![Home Page](/media/images/home.png)
 
 #### Navigation Bar
-The main navigation bar appears at the top of the page, clearly displaying the main navigational links users would require.
+The main navigation bar appears at the top of the page, clearly displaying the main navigational links users would require. For sign in and sign up and log out for signed in users.
 
-![Nav Bar](/static/css/readme-images/navbar.png)
+![Nav Bar](/media/images/header.png)
+![Nav Bar](/media/images/header-auth.png)
 
 #### Footer
 A common footer is utilised throughout the site with the links to other SHOOD websites which are my other portfolio projects, about SHOOD Blog and link to social medias.
 
-![footer](/static/css/readme-images/footer.png)
+![footer](/media/images/footer.png)
 
 ##### View post detail
-![Example Post Card](/static/css/readme-images/post-sample.png)
+![Example Post Card](/media/images/postview.png)
 
 #### Sign up
 Users can sign up in order to like or comment any posts.
+![Sign up](/media/images/signup.png)
 
 #### Sign in
 Users can sign in to their accounts.
-
-![Easy Access to view posts](/static/css/readme-images/home-page.png)
+![Sign up](/media/images/signin.png)
 
 #### 
 
@@ -119,14 +119,8 @@ All code files were validated using suitable validators for the specific languag
 HTML & CSS code passed the validation.
 There is no JavaScript code to be validated.
 Python meets with Pep8 standards except 
-* Settings.py - Line 153 - line too long- by one character and to break up the line would make readbality worse.
-* Models.py - Lines 28 and 29- line too long- as you can see i tried to break it up as much as possible without effecting the readability.
+* There are some errors regarding line too long- by one character
 
-
-#### Lighthouse Testing
-Below you can see the results of Googles Lighthouse Testing.
-
-![Lighthouse Testing](/static/css/readme-images/lighthouse-score-index.png)
 
 
 #### Python Testing
