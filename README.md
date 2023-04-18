@@ -63,6 +63,12 @@ The plan for this project was carried out using the Agile Methodology in Github.
 - Approve comments:
     * As a Site Admin, I can approve or disapprove comments to filter out objectionable comments.
 
+Live to the project in Github [here](hhttps://github.com/users/mjrosi/projects/1/views/1).
+
+![User Story To DO](/media/images/user-story-to-do.png)
+![User Story in Progress](/media/images/user-story-progress.png)
+![User Story Done](/media/images/user-story-done.png)
+
 
 ## Features
 
